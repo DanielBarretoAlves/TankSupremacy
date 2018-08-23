@@ -2,7 +2,7 @@
 
 #pragma once
 #include "Tank.h"
-#include "CoreMinimal.h"
+//#include "CoreMinimal.h"
 #include "AIController.h"
 #include "TankAIController.generated.h"
 
@@ -16,6 +16,7 @@ class TANKSUPREMACY_API ATankAIController : public AAIController
 public:
 		ATank * GetControlledTank()const;
 		virtual void BeginPlay() override;
+		ATank * GetPlayerTank()const;
 	
 	
 	
